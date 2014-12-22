@@ -1,7 +1,7 @@
 library(dplyr)
 
 # Location of UCI HAR dataset
-dataPath = "~/Downloads/UCI HAR Dataset"
+dataPath = "./UCI HAR Dataset"
 
 # Read file containing the activity names
 activity_names = read.table(file = paste(dataPath, "activity_labels.txt", sep = "/"), 
