@@ -77,3 +77,5 @@ combined_data$subject = combined_subjects
 
 tidy_data = group_by(combined_data, subject, activity) %>% summarise_each(funs(mean))
 
+write.table(tidy_data, file = "tidy_data.txt", row.name=FALSE)
+
